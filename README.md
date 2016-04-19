@@ -1,6 +1,6 @@
-Fundamentals of Modern Embedded Systems
+Artificial Intelligence & Multi-Agent Systems
 ==
-DTU, E15
+DTU, F16
 --
 Use either `rake` or `make` to compile the report.
 
