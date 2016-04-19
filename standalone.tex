@@ -1,0 +1,48 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,automata}
+\usepackage{amsmath}
+
+\usepackage{booktabs}
+\usepackage{pgf}
+\usepackage{pgfplots}
+\pgfplotsset{
+  compat        = newest,
+  table/col sep = semicolon
+}
+\pgfplotscreateplotcyclelist{black white}{%
+  solid, every mark/.append style={solid, fill=gray}, mark=*\\%
+  dotted, every mark/.append style={solid, fill=gray}, mark=square*\\%
+  densely dotted, every mark/.append style={solid, fill=gray}, mark=otimes*\\%
+  loosely dotted, every mark/.append style={solid, fill=gray}, mark=triangle*\\%
+  dashed, every mark/.append style={solid, fill=gray},mark=diamond*\\%
+  loosely dashed, every mark/.append style={solid, fill=gray},mark=*\\%
+  densely dashed, every mark/.append style={solid, fill=gray},mark=square*\\%
+  dashdotted, every mark/.append style={solid, fill=gray},mark=otimes*\\%
+  dasdotdotted, every mark/.append style={solid},mark=star\\%
+  densely dashdotted,every mark/.append style={solid, fill=gray},mark=diamond*\\%
+}
+
+\begin{document}
+%\input{graphics/0-3000-horisontal-position}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Component}    & \textbf{Type}   \\
+\midrule
+Thruster              & Control surface \\
+Thrust                & Control surface \\
+Gimbal                & Control surface \\
+Altitude              & Sensor          \\
+Velocity              & Sensor          \\
+Tilt                  & Sensor          \\
+\bottomrule
+\end{tabular}
+%\caption{Components of our simplified rocket}
+%\label{fig:sensors}
+\end{table}
+
+\end{document}
+
